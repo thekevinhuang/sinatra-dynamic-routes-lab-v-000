@@ -32,8 +32,12 @@ class App < Sinatra::Base
     case @operation
     when "multiplication"
       "#{@number1*@number2}"
-      
+    when "addition"
+      "#{@number1+@number2}"
+    when "subtraction"
+      "#{@number1-@number2}"
+    when "divide"
+      "#{@number1/@number2}"
     end
   end
 end
-
