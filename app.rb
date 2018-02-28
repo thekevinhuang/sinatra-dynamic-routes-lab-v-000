@@ -4,7 +4,8 @@ class App < Sinatra::Base
   # Write your code here!
 
   get '/reversename/:name' do
-
+    @user_name = params[:name]
+    "#{@user_name.reverse}"
 
   end
 
@@ -21,6 +22,6 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    
+
   end
 end
